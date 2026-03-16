@@ -3,8 +3,57 @@
 > This file is the **single canonical prompt** that unifies every specification, architecture requirement, game system, mission design, and validation checklist from this repository.
 >
 > It is written to serve as the authoritative instruction set for an AI coder / implementation team to build the full `Corona Control Ultimate` experience from scratch.
+>
+> ⚠️ **THIS IS THE ULTIMATE PROMPT — EVERYTHING MUST BE INCLUDED.**
+> - You must interpret **every file in this repository** as golden requirements.
+> - Every checklist item, every mission beat, every performance target, every rendering/physics requirement must be implemented or verified.
+> - No requirement is optional unless explicitly marked as optional in the source docs.
 
 ---
+
+## 0) ULTIMATE PROMPT: AGENT IMPLEMENTATION INSTRUCTIONS
+
+You are an autonomous AI coder. Your objective is to implement **Corona Control Ultimate** to production quality, strictly following every specification in this repository.
+
+### 0.1 Master Rules
+- **Do not skip** any section in any source file.
+- Where multiple files overlap, always satisfy the **strictest requirement**.
+- For every feature described, generate code + configuration + tests.
+- Produce a final **verification report** stating which files/sections are fully implemented and which still need work.
+
+### 0.2 Required Source Files (Must be fully honored)
+1. `00_MASTER_START_PROMPT_ULTRA_EXPANDED.md` — project vision, tech stack, timing system, frame-by-frame spec.
+2. `01_KONTROLL_ULTRA.md` — full validation system (700+ checks) and vertical/horizontal quality gates.
+3. `02_MISSION_ULTRA.md` — complete mission script (“Staatsfeind Nummer 1”) with cutscenes, events, objectives, branching.
+4. `03_PHASE_2_5_ULTRA.md` — rendering pipeline, WebGPU/WebGL2 integration, shader system, post-processing, shadow system.
+5. `04_PHASE_6_30_MEGA.md` — full game systems (AI, crowd, pathfinding, quest/dialog/event system, world simulation).
+
+### 0.3 Additional Source Files (Also authoritative)
+- `CORONA_CONTROL_V6_FINAL_COMPLETE.md` (final QA targets, feature list, production checklist)
+- `CORONA_CONTROL_V5.1_ULTRA_COMPLETE.md` (production-ready spec + validation checkpoints)
+- `CORONA_CONTROL_COMPLETE_PROMPT_GEMINI_CODER.md` (AI coder prompt, project structure, system mapping)
+- `CORONA_CONTROL_ULTIMATE_GAME_MECHANICS_PROMPT.md` (gameplay mechanics, combat, NPC behavior)
+- `CORONA_CONTROL_ULTIMATE_KOMPLETTER_SPIELABLAUF.md` (full gameplay flow, moral/escalation, dialog)
+- All other `.md` files in the repo are also part of the spec and must be reviewed for additional requirements.
+
+### 0.4 Implementation Checklist (must be covered)
+- [ ] Full **project scaffolding** (React + Vite + R3F + Zustand + TypeScript) set up with exact versions.
+- [ ] **WebGPU** renderer implemented with WebGL2 fallback.
+- [ ] **Time system** (24-minute day, delta normalization, frame budget enforcement).
+- [ ] **Physics system** (Jolt WASM primary, Rapier fallback, character controller, collision layers).
+- [ ] **Mission scripting engine** that can run `02_MISSION_ULTRA.md` scripts verbatim.
+- [ ] **AI/crowd system** (behavior trees, navmesh, local avoidance, moral/escalation state).
+- [ ] **Dialog system** (branching dialogs, state effects, UI integration).
+- [ ] **Validation runner** executing all `01_KONTROLL_ULTRA.md` checks and reporting pass/fail.
+
+### 0.5 Full Source Dump (Complete Requirements)
+- The file `ULTIMATE_MASTER_PROMPT_FULL_SOURCES.md` contains a **verbatim concatenation of every Markdown spec in the repo**.
+- **Every requirement** (including every validation check, every mission frame, every shader requirement, every feature list) is present in that file.
+- When in doubt, **treat that file as the absolute source of truth**.
+
+---
+
+## 1) PROJECT VISION & SUCCESS CRITERIA
 
 ## 1) PROJECT VISION & SUCCESS CRITERIA
 
@@ -211,6 +260,16 @@ Use the validation suite to ensure budgeting and detect spikes.
 2. For each feature/system, find the matching detailed doc in the repo (e.g., `02_MISSION_ULTRA.md` for mission scripts, `03_PHASE_2_5_ULTRA.md` for rendering/physics, `04_PHASE_6_30_MEGA.md` for AI & quests).
 3. Implement incrementally, validating each module with the automated validator.
 4. Keep all systems data-driven and highly configurable.
+
+---
+
+## 11) FULL VALIDATION CHECKLIST (100% OF 01_KONTROLL_ULTRA.md)
+
+The **entire 700+ check validation system** (all validation items from `01_KONTROLL_ULTRA.md`) is available verbatim in:
+
+- `ULTIMATE_MASTER_PROMPT_FULL_SOURCES.md` (contains the full contents of every `.md` spec file in this repo, including the complete validation list).
+
+📝 **Requirement:** Your implementation MUST execute and satisfy every single validation check listed in `01_KONTROLL_ULTRA.md`. Treat that file as the definitive truth for all quality, performance, security, architecture, and gameplay checks.
 
 ---
 
